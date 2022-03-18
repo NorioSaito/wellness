@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <title>home [Wellness]</title>
+
+    <link href="../src/css/drawer.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="nav" class="">
+        <div id="side-menu">
+            <div id="account">
+                <div id="profile">
+                    <img src="../images/profile.png" width="100px">
+                    <span>鈴木 一郎</span>
+                </div>
+                <div id="setting">
+                    <a href="setting.html">
+                        <img src="../images/setting.png" width="50px">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div id="navi">
+                <ul>
+                    <li>
+                        <a href="home.html">ホーム</a>
+                    </li>
+                    <li>
+                        <a href="personal-karte.html">個人カルテ</a>
+                    </li>
+                    <li>
+                        <a href="daily-record.html">日々の記録</a>
+                    </li>
+                    <li>
+                        <a href="campaign.html">キャンペーン</a>
+                    </li>
+                    <li>
+                        <a href="contents.html">コンテンツ</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">問い合わせ</a>
+                    </li>
+                    <li>
+                        <a href="reservation.html">予約</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrapper" class="">
+        <header>
+            <div class="container">
+                <div class="hamburger" id="open_nav">
+                    <img src="../images/hamburger.png" alt="">
+                </div>
+                <div class="title-block">
+                    <h3>ホーム</h3>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <section>
+                    <div class="news-area">
+                        <div>
+                            <h3>お知らせ</h3>
+                            <span>
+                                過去のお知らせは<a href="news.html">こちら</a>
+                            </span>
+                        </div>
+                        <div class="news">
+                            <p>
+                                <span>重要</span>
+                                ここにお知らせの内容を記載します。
+                                「重要」なお知らせは、冒頭に...
+                            </p>
+                        </div>
+                        <div class="news">
+                            <p>
+                                <span></span>
+                                それ以外のお知らせは、アイコン無しでテキストのみ表示します。
+                                3件まで表...
+                            </p>
+                        </div>
+                        <div class="news">
+                            <p>
+                                <span></span>
+                                1件当たり1行あたりの文字数に制限をかけますが具体的な時数はまだ決ま...
+                            </p>
+                        </div>
+                    </div><!-- end .news-area -->
+                    <div>
+
+                        <div>
+                            <h3>新着／おすすめ</h3>
+                        </div>
+
+                        <div class="campaign">
+                            <span class="thumbnail">
+                                <img alt="">
+                            </span>
+                            <p>
+                                本文
+                            </p>
+                        </div>
+                        <div class="activity">
+                            <span class="thumbnail">
+                                <img alt="">
+                            </span>
+                            <p>
+                                本文
+                            </p>
+                        </div>
+                        <div class="contents">
+                            <span class="thumbnail">
+                                <img alt="">
+                            </span>
+                            <p>
+                                本文
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="../src/js/jquery-3.4.1.min.js"></script>
+    <script>
+        'use strict';
+        $(document).ready(function() {
+            $('#open_nav').on('click', function() {
+                $('#wrapper, #nav').toggleClass('show');
+            });
+        });
+    </script>
+</body>
+
+</html>

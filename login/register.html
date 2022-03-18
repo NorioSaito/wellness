@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <title>[login] wellness system</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div id="content">
+        <h2>新規会員登録</h2>
+        <h3>お客様情報</h3>
+        <form action="#" method="post">
+            <table class="login">
+                <tbody>
+                    <tr>
+                        <td>氏名</td>
+                        <td>
+                            姓<input type="text" name="family-name" value="">
+                            名<input type="text" name="given-name" valur="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ふりがな</td>
+                        <td>
+                            せい<input type="text" name="family-name-kana" value="">
+                            めい<input type="text" name="given-name-kana" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>メールアドレス</td>
+                        <td><input type="text" name="eail-address" value=""></td>
+                    </tr>
+                    <tr>
+                        <td>メールアドレス（確認用）</td>
+                        <td><input type="text" name="email-address-confirmation" value=""></td>
+                    </tr>
+                    <tr>
+                        <td>電話番号</td>
+                        <td><input type="text" name="tel" value=""></td>
+                    </tr>
+                    <tr>
+                        <td>パスワード</td>
+                        <td><input type="password" name="password"></td>
+                    </tr>
+                    <tr>
+                        <td>パスワード（確認用）</td>
+                        <td><input type="password" name="password-confirmation"></td>
+                    </tr>
+                    <tr>
+                        <td>住所</td>
+                        <td>
+                            <label>
+                                <span>郵便番号</span>
+                                <input type="text" name="postal_code" minlength="7" maxlength="8" pattern="\d*"
+                                    autocomplete="shipping postal-code">
+                            </label>
+                            <label>
+                                <span>都道府県</span>
+                                <select name="prefecture" autocomplete="shipping address-level1">
+                                    <option value="北海道">北海道</option>
+                                    <option value="沖縄">沖縄</option>
+                                </select>
+                            </label>
+                            <label>
+                                <span>市区町村</span>
+                                <input type="text" name="city" autocomplete="shipping address-level2">
+                            </label>
+                            <label>
+                                <span>町名・番地</span>
+                                <input type="text" name="address1" autocomplete="shipping address-line1">
+                            </label>
+                            <label>
+                                <span>建物名等</span>
+                                <input type="text" name="address2" autocomplete="shipping address-line2">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>性別</td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="gender" value="male">男性
+                                </li>
+                                <li>
+                                    <input type="radio" name="gender" value="female">女性
+                                </li>
+                                <li>
+                                    <input type="radio" name="gender" value="other">その他
+                                </li>
+                                <li>
+                                    <input type="radio" name="gender" value="no-answer">無回答
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>生年月日</td>
+                        <td><input type="text" name="birthday" value=""></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                当社<a href="privacy-policy.html">プライバシーポリシー</a>に同意いただける場合は
+                <br />「同意する」にチェックを付け「入力内容の確認」ボタンをクリックしてください。
+            </p>
+            <p><input type="checkbox" name="agreement">同意する</p>
+            <button type="submit">入力内容の確認</button>
+        </form>
+
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

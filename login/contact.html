@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+    <title>[contact] wellness system</title>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <div id="content">
+            <h2>お問い合わせ</h2>
+            <p>
+                下記フォーマットにご記入いただき、「入力内容の確認」ボタンを押して内容をご確認のうえ、送信してください。<br />
+                お問い合わせフォーム送信後、自動で受け付けメールを送信いたします。（？？）<br />
+                受け付けメールが届かない場合は、別のメールアドレスをご使用いただく（？？）か、下記電話番号までご連絡ください。
+            </p>
+            <p>
+                【受付時間】XX:XX ~ XX:XX
+                <br />TEL: XXX-XXXX-XXXX
+            </p>
+            <p>
+                お問い合わせの内容によっては、お時間を頂戴する場合がございます。
+                <br />提案やご紹介のメールに対しては、お返事を差し上げられない場合がございます。
+            </p>
+            <form action="#" method="post">
+                <h3>お問い合わせ内容</h3>
+                <table class="reset">
+                    <tbody>
+                        <tr>
+                            <td>お問い合わせの種類</td>
+                            <td>
+                                <input type="radio" name="contact-kind" value="forgot-id-or-pass" checked>ID、またはパスワードを忘れた
+                                <br />
+                                <input type="radio" name="contact-kind" value="other">その他のお問い合わせ
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>件名</td>
+                            <td><input type="text" name="title"></td>
+                        </tr>
+                        <tr>
+                            <td>お問い合わせ内容</td>
+                            <td>
+                                <textarea name="contact-body"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>お客様情報</h3>
+                <table class="reset">
+                    <tbody>
+                        <tr>
+                            <td>氏名</td>
+                            <td>
+                                姓<input type="text" name="family-name" value="">
+                                名<input type="text" name="given-name" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ふりがな</td>
+                            <td>
+                                せい<input type="text" name="family-name-kana" value="">
+                                めい<input type="text" name="given-name-kana" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>メールアドレス</td>
+                            <td><input type="text" name="eail-address" value=""></td>
+                        </tr>
+                        <tr>
+                            <td>メールアドレス（確認用）</td>
+                            <td><input type="text" name="email-address-confirmation" value=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    当社<a href="privacy-policy.html">プライバシーポリシー</a>に同意いただける場合は
+                    <br />「同意する」にチェックを付け「入力内容の確認」ボタンをクリックしてください。
+                </p>
+                <p><input type="checkbox" name="agreement">同意する</p>
+                <button type="submit">入力内容の確認</button>
+            </form>
+        
+        </div>
+        <footer>
+
+        </footer>
+    </body>
+</html>
