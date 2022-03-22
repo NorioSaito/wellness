@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+/**
+ * ********************************
+ * ページ全体にかかわるCSSの設定
+ * ********************************
+ */
+html *, ::before ::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 14px;
+    line-height: 1.7rem;
+}
+@media (min-width: 760px) {
+    html {
+        font-size: 16px;
+    }
+    body {
+        font-family: sans-serif;
+    }
+}
+/* 標準的なリンクテキストの色 */
+a {
+    color: #0bd;
+}
+/* レスポンシブイメージと画像下スペース防止 */
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+/* ボタン */
+.button {
+    font-size: 1rem;
+    background: #d9d9d9;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/**
+ * ********************************
+ * ログインページ
+ * ********************************
+ */
+.login-modal {
+    margin: 5px auto;
+    text-align: center;
+    border: 1px solid #000;
+    max-width: 400px;
+    padding: 5px;
+}
+.login-modal table {
+    margin: auto;
+}
+.login-modal td {
+    min-height: 50px;
+    padding: 5px 2px;
+}
+.login-modal input[type="text"], .login-modal input[type="password"] {
+    margin: 2px;
+}
+/**
+ * ********************************
+ * 会員登録ページ
+ * ********************************
+ */
+.register table, .register tr, .register td {
+    border-collapse: collapse;
+    border: 1px #222 solid;
+}
+
+.register td {
+    text-align: left;
+}
+
+/* main {
+    max-width: 2800px;
+    margin: auto;
+    text-align: center;
+} */
+
+.required {
+    background-color: red;
+    color: white;
+}
+.optional {
+    background-color: orange;
+    color: white;
+}
+
+/**
+ * ********************************
+ * ヘッダー
+ * ********************************
+ */
+header {
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: left;
+}
+.title-block {
+    padding-left: 10px;
+}
+h1 {
+    font-size: 1.75rem;
+    margin: 0.5rem 0 0;
+}
+.hamburger {
+    width: 28px;
+    align-self: center;
+    margin-left: 16px;
+    /* text-align: center; */
+    /* color: #fff; */
+}
+
+/**
+ * ********************************
+ * サイドバー
+ * ********************************
+ */
+aside {
+    border-right: 1px #0bd solid;
+}
+/* アカウント */
+aside .account {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    border-bottom: #0bd 1px solid;
+    margin: 10px 10px;
+    padding-bottom: 10px;
+}
+aside > div {
+    padding: 20px 10px;
+}
+.profile-icon img {
+    width: 100px;
+} 
+.setting img {
+    width: 20px;
+}
+/* ナビゲーション */
+nav ul {
+    margin: 0 0;
+    padding-inline-start: 0;
+}
+nav li {
+    list-style: none outside;
+}
+nav img {
+    width: 16px;
+    margin-right: 5px;
+}
+
+/* ドロワーのための設定 */
+#nav {
+    /* font-size: 30px; */
+    position: fixed;
+    left: -220px;
+    top: 0;
+    width: 220px; /*これは任意に変える*/
+    height: 100%;
+}
+.show {
+    transform: translate3d(220px, 0, 0);
+}
+#wrapper, #nav {
+    transition: transform 0.3s;
+}
+
+/**
+ * ********************************
+ * ホーム
+ * ********************************
+ */
+/* ニュース */
+.news-area {
+    margin: 5px 10px;
+    padding: 5px 10px;
+    border-bottom: #0bd 1px solid;
+}
+.news-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.news .important {
+    font-size: 0.875rem;
+    color: #fff;
+    background: red ;
+}
+/* 新着／おすすめ */
