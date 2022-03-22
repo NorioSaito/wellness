@@ -3,73 +3,93 @@
 
 <head>
     <meta charset="utf-8">
-    <title>home [Wellness]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>base [Wellness]</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <!-- <link rel="stylesheet" href="../src/css/drawer.css"> -->
+
     <style>
-        #content{
-            width:100%;
-            height:100%;
+        #content {
+            width: 100%;
+            height: 100%;
         }
+
         #side-menu {
             width: 200px;
-            height:100%;
+            height: 100%;
             margin: 0;
             padding: 0;
             display: inline-block;
             border-right: solid;
             vertical-align: top;
         }
-        #activity{
-            width:600px;
-            padding:0;
-            display:inline-block;
-            
+
+        #activity {
+            width: 600px;
+            padding: 0;
+            display: inline-block;
         }
-        #activity .title{
-            border-bottom:solid;
-            border-color:blue;
+
+            #activity .title {
+                border-bottom: solid;
+                border-color: blue;
+            }
+
+        .activity-item img {
+            display: inline-block;
         }
-        .activity-item img{
-            display:inline-block;
+
+        .activity-title {
+            margin-bottom: 10px;
         }
-        .activity-title{
-            margin-bottom:10px;
+
+        .inline {
+            display: inline-block;
         }
-        .inline{
-            display:inline-block;
+
+        .top {
+            vertical-align: top;
         }
-        .top{
-            vertical-align:top;
-        }
+
         .mark-list {
             list-style-image: url(https://placehold.jp/20x20.png)
         }
-        .middle{
-            vertical-align:middle;
+
+        .middle {
+            vertical-align: middle;
         }
-        .label{
-            font-size:large;
+
+        .label {
+            font-size: large;
         }
-        .detail{
-            font-size:small;
-            padding-left:20px;
-            padding-right:20px;
+
+        .detail {
+            font-size: small;
+            padding-left: 20px;
+            padding-right: 20px;
         }
+
         .schedule {
             background-color: whitesmoke;
             border: solid;
             border-color: whitesmoke;
         }
+
         .oneday {
             background-color: midnightblue;
             color: white;
             padding: 0px 8px;
-            border-radius:5px;
+            border-radius: 5px;
         }
+
         .butten-more {
             display: inline-block;
             background-color: darkgray;
-            border:solid;
-            border-color:gray;
+            border: solid;
+            border-color: gray;
             color: white;
             width: 100%;
             margin-top: 30px;
@@ -81,53 +101,48 @@
 </head>
 
 <body>
-    <header>
-
-    </header>
-
-    <div id="content">
-        <div id="side-menu">
-            <h3>アクティビティ</h3>
-            <div>
-                <div id="profile">
-                    <img src="../images/profile.png" width="100px">
+    <aside id="nav" class="">
+        <div>
+            <div class="account">
+                <div class="profile">
+                    <div class="profile-icon">
+                        <img src="../images/profile.png">
+                    </div>
                     <span>鈴木 一郎</span>
                 </div>
-                <div id="setting">
+                <div class="setting">
                     <a href="setting.html">
-                        <img src="../images/setting.png" width="50px">
-                        <span>設定</span>
+                        <img src="../images/setting.png">設定
                     </a>
                 </div>
             </div>
-            <div id="navi">
+            <nav>
                 <ul>
-                    <li>
-                        <a href="home.html">ホーム</a>
-                    </li>
-                    <li>
-                        <a href="personal-karte.html">個人カルテ</a>
-                    </li>
-                    <li>
-                        <a href="daily-record.html">日々の記録</a>
-                    </li>
-                    <li>
-                        <a href="campaign.html">キャンペーン</a>
-                    </li>
-                    <li>
-                        <a href="contents.html">コンテンツ</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">問い合わせ</a>
-                    </li>
-                    <li>
-                        <a href="reservation.html">予約</a>
-                    </li>
+                    <li><a href="home.html"><img src="../images/home-icon.png">ホーム</a></li>
+                    <li><a href="personal-karte.html"><img src="../images/personal-karte-icon.png">個人カルテ</a></li>
+                    <li><a href="daily-record.html"><img src="../images/daily-record-icon.png">日々の記録</a></li>
+                    <li><a href="campaign.html"><img src="../images/campaign-icon.png">キャンペーン</a></li>
+                    <li><a href="contents.html"><img src="../images/contents-icon.png">コンテンツ</a></li>
+                    <li><a href="contact.html"><img src="../images/contact-icon.png">問い合わせ</a></li>
+                    <li><a href="reservation.html"><img src="../images/reservation-icon.png">予約</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
-        <div id="activity">
-            <div class="title">アクティビティ</div>
+    </aside>
+
+    <div id="wrapper" class="">
+        <header>
+            <!-- <div class="container"> -->
+            <div class="hamburger" id="open_nav">
+                <img src="../images/hamburger.png" alt="">
+            </div>
+            <div class="title-block">
+                <h1>アクティビティ</h1>
+            </div>
+            <!-- </div> -->
+        </header>
+        <main style="margin: 5px">
+            <!-- ↑↑スタイル属性は、実装時に適宜削除 -->
 
             <div class=" activity-items">
                 <ul class="mark-list">
@@ -139,7 +154,7 @@
                             </div>
 
                             <img src="https://placehold.jp/150x150.png">
-                            <div class="inline top">
+                            <div class="inline middle" style="margin-left:10px">
                                 <div><span class="label">参加料金</span><span class=" detail">コンテンツ</span></div>
                                 <div>
                                     <div class="inline"><span class="label">開催地域</span><span class=" detail">コンテンツ</span></div>
@@ -241,7 +256,21 @@
                     もっと見る
                 </div>
             </div>
-        </div>
+
+
+        </main>
     </div>
+
+    <script src="../src/js/jquery-3.4.1.min.js"></script>
+    <script>
+        'use strict';
+        $(document).ready(function () {
+            $('#open_nav').on('click', function () {
+                $('#wrapper, #nav').toggleClass('show');
+            });
+        });
+    </script>
+
 </body>
+
 </html>
