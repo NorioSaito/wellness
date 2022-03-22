@@ -3,74 +3,102 @@
 
 <head>
     <meta charset="utf-8">
-    <title>home [Wellness]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KARTE [Wellness]</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <!-- <link rel="stylesheet" href="../src/css/drawer.css"> -->
 </head>
 
 <body>
-    <header>
-
-    </header>
-
-    <div id="content">
-        <div id="side-menu">
-            <h3>ホーム</h3>
-            <div>
-                <div id="profile">
-                    <img src="../images/profile.png" width="100px">
+    <aside id="nav" class="">
+        <div>
+            <div class="account">
+                <div class="profile">
+                    <div class="profile-icon">
+                        <img src="../images/profile.png">
+                    </div>
                     <span>鈴木 一郎</span>
                 </div>
-                <div id="setting">
+                <div class="setting">
                     <a href="setting.html">
-                        <img src="../images/setting.png" width="50px">
-                        <span>設定</span>
+                        <img src="../images/setting.png">設定
                     </a>
                 </div>
             </div>
-            <div id="navi">
+            <nav>
                 <ul>
-                    <li>
-                        <a href="home.html">ホーム</a>
-                    </li>
-                    <li>
-                        <a href="personal-karte.html">個人カルテ</a>
-                    </li>
-                    <li>
-                        <a href="daily-record.html">日々の記録</a>
-                    </li>
-                    <li>
-                        <a href="campaign.html">キャンペーン</a>
-                    </li>
-                    <li>
-                        <a href="contents.html">コンテンツ</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">問い合わせ</a>
-                    </li>
-                    <li>
-                        <a href="reservation.html">予約</a>
-                    </li>
+                    <li><a href="home.html"><img src="../images/home-icon.png">ホーム</a></li>
+                    <li><a href="personal-karte.html"><img src="../images/personal-karte-icon.png">個人カルテ</a></li>
+                    <li><a href="daily-record.html"><img src="../images/daily-record-icon.png">日々の記録</a></li>
+                    <li><a href="campaign.html"><img src="../images/campaign-icon.png">キャンペーン</a></li>
+                    <li><a href="contents.html"><img src="../images/contents-icon.png">コンテンツ</a></li>
+                    <li><a href="contact.html"><img src="../images/contact-icon.png">問い合わせ</a></li>
+                    <li><a href="reservation.html"><img src="../images/reservation-icon.png">予約</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
-        <div id="main">
-            <p>
-                コンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツ
-                コンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツ
-            </p>
-            <p>
-                コンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツ
-                コンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツ
-            </p>
-            <p>
-                コンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツ
-                コンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツコンテンツ
+    </aside>
 
-            </p>
-            <p>
-                コンテンツコンテンツコンテンツコンテンツコンテンツ
-            </p>
-        </div>
+    <div id="wrapper" class="">
+        <header>
+            <!-- <div class="container"> -->
+                <div class="hamburger" id="open_nav">
+                    <img src="../images/hamburger.png" alt="">
+                </div>
+                <div class="title-block">
+                    <h1>個人のカルテ</h1>
+                </div>
+            <!-- </div> -->
+        </header>
+        <main> 
+            <section class="karte-tiles">
+                <div>
+                    <a href="karte/personal-advice.html">パーソナルアドバイス</a>
+                </div>
+                <div>
+                    <a href="karte/health-coaching-history.html">保健指導歴</a>
+                </div>
+                <div>
+                    <a href="karte/basic-infomation.html">基本情報</a>
+                </div>
+                <div>
+                    <a href="karte/medical-test-result.html">健康診断結果</a>
+                </div>
+                <div>
+                    <a href="karte/garmin-data.html">GARMINデータ</a>
+                </div>
+                <div>
+                    <a href="karte/physical-test-result.html">体力テスト結果</a>
+                </div>
+                <div>
+                    <a href="karte/input-target.html">目標入力</a>
+                </div>
+                <div>
+                    <a href="karte/stabilometry-result.html">重心動揺計結果</a>
+                </div>
+                <div>
+                    <a href="karte/cognitive-test-result.html">認知機能テスト結果</a>
+                </div>
+                <div>
+                    <a href="karte/locomotive-test-result.html">ロコモ度テスト結果</a>
+                </div>
+            </section>
+        </main>
     </div>
+
+    <script src="../src/js/jquery-3.4.1.min.js"></script>
+    <script>
+        'use strict';
+        $(document).ready(function () {
+            $('#open_nav').on('click', function () {
+                $('#wrapper, #nav').toggleClass('show');
+            });
+        });
+    </script>
+
 </body>
 
 </html>
