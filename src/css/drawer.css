@@ -1,51 +1,6 @@
 @charset "UTF-8";
 
-#account {
-    display: flex;
-    max-width: 100%;
-}
 
-.container {
-    max-width: 100%;
-}
-img {
-    max-width: 100%;
-}
-header {
-    padding: 16px 0;
-}
 
-header .container {
-    display: flex;
-    justify-content: left;
-}
 
-.title-block {
-    flex: 1 1 auto;
-    padding-left: 10px;
-}
 
-.hamburger {
-    flex: 00 32px;
-    align-self: center;
-    margin-left: 16px;
-    text-align: center;
-    color: #fff;
-}
-
-#nav {
-    /* font-size: 30px; */
-    position: fixed;
-    left: -300px;
-    top: 0;
-    width: 300px; /*これは任意に変える*/
-    height: 100%;
-}
-
-.show {
-    transform: translate3d(300px, 0, 0);
-}
-
-#wrapper, #nav {
-    transition: transform 0.3s;
-}
