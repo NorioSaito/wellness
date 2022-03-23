@@ -5,83 +5,109 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
     <title>[login] wellness system</title>
+    <link href="../src/css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
 
     </header>
-    <div id="content">
+    <main class="register" id="content">
         <h2>新規会員登録</h2>
-        <h3>お客様情報</h3>
+        <h3 style="color:red;">お客様情報</h3>
         <form action="#" method="post">
-            <table class="login">
+            <table>
                 <tbody>
                     <tr>
-                        <td>氏名</td>
+                        <td>氏名
+                            <div><span class="required">必須</span></div>
+                        </td>
                         <td>
-                            姓<input type="text" name="family-name" value="">
-                            名<input type="text" name="given-name" valur="">
+                            <div>
+                                姓<input type="text" name="family-name" value="">
+                            </div>
+                            <div>
+                                名<input type="text" name="given-name" valur="">
+                            </div>
                         </td>
                     </tr>
                     <tr>
-                        <td>ふりがな</td>
+                        <td>ふりがな
+                            <div><span class="required">必須</span></div>
+                        </td>
                         <td>
-                            せい<input type="text" name="family-name-kana" value="">
-                            めい<input type="text" name="given-name-kana" value="">
+                            <div>
+                                せい<input type="text" name="family-name-kana" value="">
+                            </div>
+                            <div>
+                                めい<input type="text" name="given-name-kana" value="">
+                            </div>
                         </td>
                     </tr>
                     <tr>
-                        <td>メールアドレス</td>
+                        <td>メールアドレス
+                            <div><span class="required">必須</span></div>
+                        </td>
                         <td><input type="text" name="eail-address" value=""></td>
                     </tr>
                     <tr>
-                        <td>メールアドレス（確認用）</td>
+                        <td>メールアドレス（確認用）
+                            <div><span class="required">必須</span></div>
+                        </td>
                         <td><input type="text" name="email-address-confirmation" value=""></td>
                     </tr>
                     <tr>
-                        <td>電話番号</td>
+                        <td>電話番号
+                            <div><span class="required">必須</span></div>
+                        </td>
                         <td><input type="text" name="tel" value=""></td>
                     </tr>
                     <tr>
-                        <td>パスワード</td>
+                        <td>パスワード
+                            <div><span class="required">必須</span></div>
+                        </td>
                         <td><input type="password" name="password"></td>
                     </tr>
                     <tr>
-                        <td>パスワード（確認用）</td>
+                        <td>パスワード（確認用）
+                            <div><span class="required">必須</span></div>
+                        </td>
                         <td><input type="password" name="password-confirmation"></td>
                     </tr>
                     <tr>
-                        <td>住所</td>
+                        <td>住所
+                            <div><span class="optional">任意</span></div>
+                        </td>
                         <td>
-                            <label>
+                            <div>
                                 <span>郵便番号</span>
-                                <input type="text" name="postal_code" minlength="7" maxlength="8" pattern="\d*"
-                                    autocomplete="shipping postal-code">
-                            </label>
-                            <label>
+                                <input type="text" name="postal_code" minlength="7" maxlength="8" pattern="\d*" autocomplete="shipping postal-code">
+                            </div>
+                            <div>
                                 <span>都道府県</span>
                                 <select name="prefecture" autocomplete="shipping address-level1">
                                     <option value="北海道">北海道</option>
                                     <option value="沖縄">沖縄</option>
                                 </select>
-                            </label>
-                            <label>
+                            </div>
+                            <div>
                                 <span>市区町村</span>
                                 <input type="text" name="city" autocomplete="shipping address-level2">
-                            </label>
-                            <label>
+                            </div>
+                            <div>
                                 <span>町名・番地</span>
                                 <input type="text" name="address1" autocomplete="shipping address-line1">
-                            </label>
-                            <label>
+                            </div>
+                            <div>
                                 <span>建物名等</span>
                                 <input type="text" name="address2" autocomplete="shipping address-line2">
-                            </label>
+                            </div>
                         </td>
                     </tr>
                     <tr>
-                        <td>性別</td>
+                        <td>性別
+                            <div><span class="optional">任意</span></div>
+                        </td>
                         <td>
                             <ul>
                                 <li>
@@ -100,7 +126,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>生年月日</td>
+                        <td>生年月日
+                            <div><span class="optional">任意</span></div>
+                        </td>
                         <td><input type="text" name="birthday" value=""></td>
                     </tr>
                 </tbody>
@@ -113,7 +141,7 @@
             <button type="submit">入力内容の確認</button>
         </form>
 
-    </div>
+    </main>
     <footer>
 
     </footer>
