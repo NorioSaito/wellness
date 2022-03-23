@@ -5,16 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
     <title>[login] wellness system</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link href="../src/css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
 
     </header>
-    <div id="content">
+    <main class="register">
         <h2>新規会員登録</h2>
         <h3>お客様情報</h3>
-        <form action="#" method="post">
+        <form action="registered.html" method="post">
             <table class="login">
                 <tbody>
                     <tr>
@@ -22,17 +26,29 @@
                         <td>XXXXXXXXXXXXXXXX</td>
                     </tr>
                     <tr>
-                        <td>氏名</td>
+                        <td><div>氏名</div></td>
                         <td>
-                            姓<input type="text" name="family-name" value="鈴木" disabled>
-                            名<input type="text" name="given-name" value="一郎" disabled>
+                            <div>
+                                姓<input type="text" name="family-name" value="鈴木" disabled>
+                            </div>
+                            <div>
+                                名<input type="text" name="given-name" value="一郎" disabled>
+                            </div>
                         </td>
                     </tr>
                     <tr>
-                        <td>ふりがな</td>
                         <td>
-                            せい<input type="text" name="family-name-kana" value="すずき" disabled>
-                            めい<input type="text" name="given-name-kana" value="いちろう" disabled>
+                            <div>
+                                ふりがな
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                せい<input type="text" name="family-name-kana" value="すずき" disabled>
+                            </div>
+                            <div>
+                                めい<input type="text" name="given-name-kana" value="いちろう" disabled>
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -50,30 +66,34 @@
                     <tr>
                         <td>住所</td>
                         <td>
-                            <label>
+                            <div>
                                 <span>郵便番号</span>
-                                <input type="text" name="postal_code" minlength="7" maxlength="8" pattern="\d*" autocomplete="shipping postal-code" value="102-0072" disabled>
-                            </label>
-                            <label>
+                                <input type="text" name="postal_code" minlength="7" maxlength="8" pattern="\d*"
+                                    autocomplete="shipping postal-code" value="102-0072" disabled>
+                            </div>
+                            <div>
                                 <span>都道府県</span>
                                 <select name="prefecture" autocomplete="shipping address-level1" disabled>
                                     <option value="北海道">北海道</option>
                                     <option vlaue="東京都" selected>東京都</option>
                                     <option value="沖縄">沖縄</option>
                                 </select>
-                            </label>
-                            <label>
+                            </div>
+                            <div>
                                 <span>市区町村</span>
-                                <input type="text" name="city" autocomplete="shipping address-level2" value="千代田区飯田橋" disabled>
-                            </label>
-                            <label>
+                                <input type="text" name="city" autocomplete="shipping address-level2" value="千代田区飯田橋"
+                                    disabled>
+                            </div>
+                            <div>
                                 <span>町名・番地</span>
-                                <input type="text" name="address1" autocomplete="shipping address-line1" value="4-8-13" disabled>
-                            </label>
-                            <label>
+                                <input type="text" name="address1" autocomplete="shipping address-line1" value="4-8-13"
+                                    disabled>
+                            </div>
+                            <div>
                                 <span>建物名等</span>
-                                <input type="text" name="address2" autocomplete="shipping address-line2" value="山商ビル4F" disabled>
-                            </label>
+                                <input type="text" name="address2" autocomplete="shipping address-line2" value="山商ビル4F"
+                                    disabled>
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -101,11 +121,11 @@
                     </tr>
                 </tbody>
             </table>
-            <button type="submit">修正</button>
-            <button type="submit">登録</button>
+            <input type="submit" class="button" value="修正" formaction="register.html">
+            <input type="submit" class="button" value="登録">
         </form>
 
-    </div>
+    </main>
     <footer>
 
     </footer>
