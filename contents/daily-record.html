@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>日々の記録 [Wellness]</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <!-- <link rel="stylesheet" href="../src/css/drawer.css"> -->
+</head>
+
+<body>
+    <aside id="nav" class="">
+        <div>
+            <div class="account">
+                <div class="profile">
+                    <div class="profile-icon">
+                        <img src="../images/profile.png">
+                    </div>
+                    <span>鈴木 一郎</span>
+                </div>
+                <div class="setting">
+                    <a href="setting.html">
+                        <img src="../images/setting.png">設定
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html"><img src="../images/home-icon.png">ホーム</a></li>
+                    <li><a href="personal-karte.html"><img src="../images/personal-karte-icon.png">個人カルテ</a></li>
+                    <li><a href="daily-record.html"><img src="../images/daily-record-icon.png">日々の記録</a></li>
+                    <li><a href="campaign.html"><img src="../images/campaign-icon.png">キャンペーン</a></li>
+                    <li><a href="activity.html"><img src="../images/activity-icon.png">アクティビティ</a></li>
+                    <li><a href="contents.html"><img src="../images/contents-icon.png">コンテンツ</a></li>
+                    <li><a href="contact.html"><img src="../images/contact-icon.png">問い合わせ</a></li>
+                    <li><a href="reservation.html"><img src="../images/reservation-icon.png">予約</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div id="wrapper" class="">
+        <header>
+            <!-- <div class="container"> -->
+            <div class="hamburger" id="open_nav">
+                <img src="../images/hamburger.png" alt="">
+            </div>
+            <div class="title-block">
+                <h1>日々の記録</h1>
+            </div>
+            <!-- </div> -->
+        </header>
+        <main style="margin: 5px">
+            <form action="#">
+                <div>
+                    <label for="weight">体重: </label>
+                    <input type="text" name="weight" id="weight">
+                </div>
+                <div>
+                    血圧:
+                    <div>
+                        <label>下</label>
+                        <input type="text" name="blood-presure-bottom">mmHg
+                    </div>
+                    <div>
+                        <label>上</label>
+                        <input type="text" name="blood-presure-top">mmHg
+                    </div>
+                </div>
+                <div>
+                    <div style="margin: 30px 0;">
+                        朝食画像
+                        <input type="button" class="button" value="画像選択">
+                        <img src="../images/sample-breakfast.jpg">
+                    </div>
+                    <div style="margin: 30px 0;">
+                        昼食画像
+                        <input type="button" class="button" value="画像選択">
+                        <img src="../images/sample-lunch.jpg">
+                    </div>
+                    <div style="margin: 30px 0;">
+                        夕食画像
+                        <input type="button" class="button" value="画像選択">
+                        <img src="../images/sample-dinner.jpg">
+                    </div>
+                </div>
+                <div style="margin: 30px 0;">
+                    <input type="button" class="button" value="GARMINデータ取得">
+                    <!-- <br><img src="../images/garmin-data-table.png" style="width: 400px; margin: 30px 0;"> -->
+
+                    <section class="measure-tiles">
+<div><div class="measure-title"><div class="category">循環器: </div><div>運動時心拍</div></div><div class="measured-value">XXX<span class="unit">bpm</span></div><div><div class="standard">基準値: XXX ~ XXX</div><div><span class="normal"></span></div></div></div>
+<div><div class="measure-title"><div class="category">循環器: </div><div>安静時心拍</div></div><div class="measured-value">XXX<span class="unit">bpm</span></div><div><div class="standard">基準値: XXX ~ XXX</div><div><span class="normal"></span></div></div></div>
+<div><div class="measure-title"><div class="category">代謝: </div><div>基礎代謝</div></div><div class="measured-value">XXX<span class="unit"></span></div><div><div class="standard">基準値: XXX ~ XXX</div><div><span class="risk"></span></div></div></div>
+<div><div class="measure-title"><div class="category">睡眠: </div><div>深い睡眠</div></div><div class="measured-value">XXX<span class="unit"></span></div><div><div class="standard">基準値: XXX ~ XXX</div><div><span class="normal"></span></div></div></div>
+<div><div class="measure-title"><div class="category">睡眠: </div><div>中途覚醒</div></div><div class="measured-value">XXX<span class="unit"></span></div><div><div class="standard">基準値: XXX ~ XXX</div><div><span class="normal"></span></div></div></div>
+<div><div class="measure-title"><div class="category">ストレス: </div><div>ストレス平均</div></div><div class="measured-value">XXX<span class="unit"></span></div><div><div class="standard">基準値: XXX ~ XXX</div><div><span class="risk"></span></div></div></div>
+<div><div class="measure-title"><div class="category">ストレス: </div><div>高ストレス割合</div></div><div class="measured-value">XX<span class="unit">%</span></div><div><div class="standard">基準値: XXX ~ XXX</div><div><span class="risk"></span></div></div></div>
+<div><div class="measure-title"><div class="category">ストレス: </div><div>メリハリ</div></div><div class="measured-value">XXX<span class="unit"></span></div><div><div class="standard">基準値: XXX ~ XXX</div><div><span class="normal"></span></div></div></div>
+<div><div class="measure-title"><div class="category">運動: </div><div>歩数</div></div><div class="measured-value">XXX<span class="unit">歩</span></div><div><div class="standard">基準値: XXX ~ XXX</div><div><span class="warning"></span></div></div></div>
+<div><div class="measure-title"><div class="category">運動: </div><div>消費カロリー</div></div><div class="measured-value">XXX<span class="unit">kcal</span></div><div><div class="standard">基準値: XXX ~ XXX</div><div><span class="high-risk"></span></div></div></div>
+                    </section>
+                </div>
+            </form>
+            <img src="../images/analysis-graph.jpg" style="width: 400px; margin: 30px 0;">
+        </main>
+    </div>
+
+    <script src="../src/js/jquery-3.4.1.min.js"></script>
+    <script>
+        'use strict';
+        $(document).ready(function () {
+            $('#open_nav').on('click', function () {
+                $('#wrapper, #nav').toggleClass('show');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

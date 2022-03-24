@@ -188,6 +188,7 @@ nav img {
  * ********************************
  */
 /* お知らせ */
+/* 過去のお知らせ一覧画面と共通部分あり */
 .news-area {
     margin: 5px 10px 15px;
     padding: 5px 10px;
@@ -198,10 +199,16 @@ nav img {
     flex-direction: row;
     justify-content: space-between;
 }
+.news-area article {
+    margin: 5px 0px;
+}
 .news-article .important {
     font-size: 0.875rem;
     color: #fff;
     background: red ;
+}
+.news-article .important::after {
+    content: "重要";
 }
 .news-area h2 {
     margin: 0 0 0;
@@ -211,6 +218,24 @@ nav img {
     margin: 0 0 0.125rem;
     line-height: 1.5rem;
 }
+.news-area .detail {
+    font-size: 0.875rem;
+}
+/* 過去のお知らせ検索メニュー */
+.news-area .search-condition {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border: 1px #222 solid;
+    padding: 5px;
+}
+.news-area .search-condition > div {
+    margin: 10px 5px;
+}
+.news-area input[type="text"] {
+    width: 150px;
+}
+
 
 /* ダッシュボード */
 .dashboard {
@@ -342,12 +367,12 @@ nav img {
     border-radius: 3px;
 }
 .measure-tiles .measure-title {
-    font-size: 1.75rem;
-    /* font-weight: bold; */
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 .measure-tiles .category {
-    font-size: 1.25rem;
-    /* font-weight: normal; */
+    font-size: 1rem;
+    font-weight: normal;
 }
 .measure-tiles .measured-value {
     /* height: auto; */
