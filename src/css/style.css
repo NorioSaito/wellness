@@ -187,7 +187,7 @@ nav img {
  * ホーム
  * ********************************
  */
-/* ニュース */
+/* お知らせ */
 .news-area {
     margin: 5px 10px 15px;
     padding: 5px 10px;
@@ -211,9 +211,35 @@ nav img {
     margin: 0 0 0.125rem;
     line-height: 1.5rem;
 }
+
+/* ダッシュボード */
+.dashboard {
+    margin: 50px 10px 15px;
+    padding: 5px 10px;
+    border-bottom: #0bd 1px solid;
+}
+.dashboard h2 {
+    margin: 0 0 0;
+    font-size: 1.5rem;
+}
+.dashboard-tiles {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* height: 170px; */
+}
+.dashboard img {
+    margin: 5px;
+    border: 1px #222 solid;
+    border-radius: 11px;
+    height: 158px;
+    width: 134px;
+}
+
 /* 新着／おすすめ */
+/* パーソナルアドバイス画面と共通 */
 .recommendation-area {
-    margin: 5px 15px;
+    margin: 50px 15px;
     padding: 5px 15px;
 }
 .recommendation-area h2 {
@@ -227,10 +253,13 @@ nav img {
 }
 .recommendation-area article {
     display: flex;
+    margin: 10px;
 }
+
 .recommendation-area article .thumbnail {
     display: block;
     width: 100px;
+    margin: 10px;
 }
 .recommendation-area article h4 {
     margin: 1rem 0 .5rem;
