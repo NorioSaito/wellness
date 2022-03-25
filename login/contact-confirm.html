@@ -15,7 +15,7 @@
     <header>
 
     </header>
-    <div id="content">
+    <div id="content" class="register">
         <h2>入力内容の確認</h2>
         <form action="contact-accepted.html" method="post">
             <h3>お問い合わせ内容</h3>
@@ -49,15 +49,15 @@
                     <tr>
                         <td>氏名</td>
                         <td>
-                            姓<input type="text" name="family-name" value="鈴木" disabled>
-                            名<input type="text" name="given-name" value="一郎" disabled>
+                            <div>姓<input type="text" name="family-name" value="鈴木" disabled></div>
+                            <div>名<input type="text" name="given-name" value="一郎" disabled></div>
                         </td>
                     </tr>
                     <tr>
                         <td>ふりがな</td>
                         <td>
-                            せい<input type="text" name="family-name-kana" value="すずき" disabled>
-                            めい<input type="text" name="given-name-kana" value="いちろう" disabled>
+                            <div>せい<input type="text" name="family-name-kana" value="すずき" disabled></div>
+                            <div>めい<input type="text" name="given-name-kana" value="いちろう" disabled></div>
                         </td>
                     </tr>
                     <tr>
@@ -66,8 +66,8 @@
                     </tr>
                 </tbody>
             </table>
-            <button type="submit" formaction="contact.html">修正</button>
-            <button type="submit">送信</button>
+            <input class="button" type="submit" value="修正" formaction="contact.html">
+            <input class="button" type="submit" value="送信">
         </form>
 
     </div>

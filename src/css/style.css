@@ -62,6 +62,7 @@ td {
     text-align: center;
     border: 1px solid #000;
     max-width: 400px;
+    max-width: 90vw;
     padding: 5px;
 }
 .login-modal table {
@@ -79,20 +80,22 @@ td {
  * 会員登録ページ, 確認ページ
  * ********************************
  */
+.register {
+
+    max-width: 95%;
+    width: 500px;
+    margin: 0 auto;
+}
 .register table, .register tr, .register td {
+    margin: auto;
     border-collapse: collapse;
     border: 1px #222 solid;
 }
 
 .register td {
     text-align: left;
+    padding: 5px;
 }
-
-/* main {
-    max-width: 2800px;
-    margin: auto;
-    text-align: center;
-} */
 
 .required {
     background-color: red;
@@ -101,6 +104,17 @@ td {
 .optional {
     background-color: orange;
     color: white;
+}
+.register input[type="text"] {
+    max-width: 50vw;
+}
+.register .button {
+    display: block;
+    margin: 10px auto 5px;
+}
+.register textarea {
+    width: 90%;
+    height: 100px;
 }
 
 /**
