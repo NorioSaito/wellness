@@ -1,1 +1,197 @@
-作成予定
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>登録情報編集 [Wellness]</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <!-- <link rel="stylesheet" href="../src/css/drawer.css"> -->
+</head>
+
+<body>
+    <aside id="nav" class="">
+        <div>
+            <div class="account">
+                <div class="profile">
+                    <div class="profile-icon">
+                        <img src="../images/profile.png">
+                    </div>
+                    <span>鈴木 一郎</span>
+                </div>
+                <div class="setting">
+                    <a href="setting.html">
+                        <img src="../images/setting.png">設定
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html"><img src="../images/home-icon.png">ホーム</a></li>
+                    <li><a href="personal-karte.html"><img src="../images/personal-karte-icon.png">個人カルテ</a></li>
+                    <li><a href="daily-record.html"><img src="../images/daily-record-icon.png">日々の記録</a></li>
+                    <li><a href="campaign.html"><img src="../images/campaign-icon.png">キャンペーン</a></li>
+                    <li><a href="activity.html"><img src="../images/activity-icon.png">アクティビティ</a></li>
+                    <li><a href="contents.html"><img src="../images/contents-icon.png">コンテンツ</a></li>
+                    <li><a href="contact.html"><img src="../images/contact-icon.png">問い合わせ</a></li>
+                    <li><a href="reservation.html"><img src="../images/reservation-icon.png">予約</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div id="wrapper" class="">
+        <header>
+            <!-- <div class="container"> -->
+                <div class="hamburger" id="open_nav">
+                    <img src="../images/hamburger.png" alt="">
+                </div>
+                <div class="title-block">
+                    <h1>登録情報編集</h1>
+                </div>
+            <!-- </div> -->
+        </header>
+        <main class="register" style="margin: 5px">
+
+            <h3 style="color:red;">お客様情報</h3>
+            <form action="#" method="post">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>氏名
+                                <div><span class="required">必須</span></div>
+                            </td>
+                            <td>
+                                <div>
+                                    姓<input type="text" name="family-name" value="鈴木">
+                                </div>
+                                <div>
+                                    名<input type="text" name="given-name" value="一郎">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ふりがな
+                                <div><span class="required">必須</span></div>
+                            </td>
+                            <td>
+                                <div>
+                                    せい<input type="text" name="family-name-kana" value="すずき">
+                                </div>
+                                <div>
+                                    めい<input type="text" name="given-name-kana" value="いちろう">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>メールアドレス
+                                <div><span class="required">必須</span></div>
+                            </td>
+                            <td><input type="text" name="eail-address" value="abc@sample.com"></td>
+                        </tr>
+                        <tr>
+                            <td>メールアドレス（確認用）
+                                <div><span class="required">必須</span></div>
+                            </td>
+                            <td><input type="text" name="email-address-confirmation" value=""></td>
+                        </tr>
+                        <tr>
+                            <td>電話番号
+                                <div><span class="required">必須</span></div>
+                            </td>
+                            <td><input type="text" name="tel" value="000-0000-0000"></td>
+                        </tr>
+                        <tr>
+                            <td>パスワード
+                                <div><span class="required">必須</span></div>
+                            </td>
+                            <td><input type="password" name="password" value="*******"></td>
+                        </tr>
+                        <tr>
+                            <td>パスワード（確認用）
+                                <div><span class="required">必須</span></div>
+                            </td>
+                            <td><input type="password" name="password-confirmation"></td>
+                        </tr>
+                        <tr>
+                            <td>住所
+                                <div><span class="optional">任意</span></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <span>郵便番号</span>
+                                    <input type="text" name="postal_code" minlength="7" maxlength="8" pattern="\d*" autocomplete="shipping postal-code" value="1020072">
+                                </div>
+                                <div>
+                                    <span>都道府県</span>
+                                    <select name="prefecture" autocomplete="shipping address-level1">
+                                        <option value="北海道">北海道</option>
+                                        <option value="東京都" selected>東京都</option>
+                                        <option value="沖縄">沖縄</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <span>市区町村</span>
+                                    <input type="text" name="city" autocomplete="shipping address-level2" value="千代田区飯田橋">
+                                </div>
+                                <div>
+                                    <span>町名・番地</span>
+                                    <input type="text" name="address1" autocomplete="shipping address-line1" value="4-8-13">
+                                </div>
+                                <div>
+                                    <span>建物名等</span>
+                                    <input type="text" name="address2" autocomplete="shipping address-line2" value="山商ビル4F">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>性別
+                                <div><span class="optional">任意</span></div>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="gender" value="male">男性
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="gender" value="female">女性
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="gender" value="other" checked>その他
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="gender" value="no-answer">無回答
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>生年月日
+                                <div><span class="optional">任意</span></div>
+                            </td>
+                            <td><input type="date" name="birthday" value="1970/01/01"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="submit" class="button" value="確定">
+            </form>
+    
+        </main>
+    </div>
+
+    <script src="../src/js/jquery-3.4.1.min.js"></script>
+    <script>
+        'use strict';
+        $(document).ready(function () {
+            $('#open_nav').on('click', function () {
+                $('#wrapper, #nav').toggleClass('show');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
