@@ -1,75 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
+
+<head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
     <title>[contact] wellness system</title>
-    </head>
-    <body>
-        <header>
 
-        </header>
-        <div id="content">
-            <h2>入力内容の確認</h2>
-            <form action="#" method="post">
-                <h3>お問い合わせ内容</h3>
-                <table class="reset">
-                    <tbody>
-                        <tr>
-                            <td>お問い合わせの種類</td>
-                            <td>
-                                <input type="radio" name="contact-kind" value="forgot-id-or-pass" checked disabled>ID、またはパスワードを忘れた
-                                <br />
-                                <input type="radio" name="contact-kind" value="other">その他のお問い合わせ
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>件名</td>
-                            <td><input type="text" name="title" value="パスワードがわからない" disabled></td>
-                        </tr>
-                        <tr>
-                            <td>お問い合わせ内容</td>
-                            <td>
-                                <textarea name="contact-body" disabled>パスワードを忘れたので再発行してください。</textarea>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+    <!-- css -->
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link href="../src/css/style.css" rel="stylesheet">
+</head>
 
-                <h3>お客様情報</h3>
-                <table class="reset">
-                    <tbody>
-                        <tr>
-                            <td>氏名</td>
-                            <td>
-                                姓<input type="text" name="family-name" value="鈴木" disabled>
-                                名<input type="text" name="given-name" value="一郎" disabled>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>ふりがな</td>
-                            <td>
-                                せい<input type="text" name="family-name-kana" value="すずき" disabled>
-                                めい<input type="text" name="given-name-kana" value="いちろう" disabled>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>メールアドレス</td>
-                            <td><input type="text" name="eail-address" value="abc@sample.com" disabled></td>
-                        </tr>
-                        <tr>
-                            <td>メールアドレス（確認用）</td>
-                            <td><input type="text" name="email-address-confirmation" value="abc@sample.com" disabled></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <button type="submit">修正</button>
-                <button type="submit">送信</button>
-            </form>
-        
-        </div>
-        <footer>
+<body>
+    <header>
 
-        </footer>
-    </body>
+    </header>
+    <div id="content">
+        <h2>入力内容の確認</h2>
+        <form action="contact-accepted.html" method="post">
+            <h3>お問い合わせ内容</h3>
+            <table class="reset">
+                <tbody>
+                    <tr>
+                        <td>お問い合わせの種類</td>
+                        <td>
+                            <input type="radio" name="contact-kind" value="forgot-id-or-pass" checked
+                                disabled>ID、またはパスワードを忘れた
+                            <br />
+                            <input type="radio" name="contact-kind" value="other">その他のお問い合わせ
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>件名</td>
+                        <td><input type="text" name="title" value="パスワードがわからない" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>お問い合わせ内容</td>
+                        <td>
+                            <textarea name="contact-body" disabled>パスワードを忘れたので再発行してください。</textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>お客様情報</h3>
+            <table class="reset">
+                <tbody>
+                    <tr>
+                        <td>氏名</td>
+                        <td>
+                            姓<input type="text" name="family-name" value="鈴木" disabled>
+                            名<input type="text" name="given-name" value="一郎" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ふりがな</td>
+                        <td>
+                            せい<input type="text" name="family-name-kana" value="すずき" disabled>
+                            めい<input type="text" name="given-name-kana" value="いちろう" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>メールアドレス</td>
+                        <td><input type="text" name="eail-address" value="abc@sample.com" disabled></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit" formaction="contact.html">修正</button>
+            <button type="submit">送信</button>
+        </form>
+
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
 </html>

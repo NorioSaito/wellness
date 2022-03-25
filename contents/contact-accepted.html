@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>お問い合わせ [Wellness]</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <!-- <link rel="stylesheet" href="../src/css/drawer.css"> -->
+</head>
+
+<body>
+    <aside id="nav" class="">
+        <div>
+            <div class="account">
+                <div class="profile">
+                    <div class="profile-icon">
+                        <img src="../images/profile.png">
+                    </div>
+                    <span>鈴木 一郎</span>
+                </div>
+                <div class="setting">
+                    <a href="setting.html">
+                        <img src="../images/setting.png">設定
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html"><img src="../images/home-icon.png">ホーム</a></li>
+                    <li><a href="personal-karte.html"><img src="../images/personal-karte-icon.png">個人カルテ</a></li>
+                    <li><a href="daily-record.html"><img src="../images/daily-record-icon.png">日々の記録</a></li>
+                    <li><a href="campaign.html"><img src="../images/campaign-icon.png">キャンペーン</a></li>
+                    <li><a href="activity.html"><img src="../images/activity-icon.png">アクティビティ</a></li>
+                    <li><a href="contents.html"><img src="../images/contents-icon.png">コンテンツ</a></li>
+                    <li><a href="contact.html"><img src="../images/contact-icon.png">問い合わせ</a></li>
+                    <li><a href="reservation.html"><img src="../images/reservation-icon.png">予約</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div id="wrapper" class="">
+        <header>
+            <div class="hamburger" id="open_nav">
+                <img src="../images/hamburger.png" alt="">
+            </div>
+            <div class="title-block">
+                <h1>お問い合わせ</h1>
+            </div>
+        </header>
+        <main style="margin: 5px">
+
+            <section class="login-modal">
+                <h2>受付完了</h2>
+                <div>
+                    <p>
+                        お問い合わせを受け付けました。
+                        <br />受け付けメールを送信いたしまいたので、メールをご確認ください。
+                    </p>
+                </div>
+                <a href="home.html">ホーム画面へ</a>
+            </section>
+        </main>
+    </div>
+
+    <script src="../src/js/jquery-3.4.1.min.js"></script>
+    <script>
+        'use strict';
+        $(document).ready(function () {
+            $('#open_nav').on('click', function () {
+                $('#wrapper, #nav').toggleClass('show');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
